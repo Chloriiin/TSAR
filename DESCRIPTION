@@ -1,0 +1,63 @@
+Package: TSAR
+Type: Package
+Title: Thermal Shift Analysis in R
+Version: 1.1.6
+Year: 2023
+Authors@R: c(person("Xinlin", 
+			"Gao", 
+			email = "candygao2015@outlook.com", 
+			role = c("aut", "cre"),
+			comment = c(ORCID = "0009-0002-2518-235X")),
+		person(c("William", "M."), 
+			"McFadden", 
+			email = "wmm27@pitt.edu", 
+			role = c("aut","fnd"),
+			comment = c(ORCID = "0000-0001-6911-2172")),
+		person(c("Stefan", "G."),
+			"Sarafianos",
+			email = "stefanos.sarafianos@emory.edu",
+			role = c("fnd","aut","ths"),
+			comment = c(ORCID = "0000-0002-5840-154X"))
+		)
+Description: This package automates analysis workflow for Thermal Shift 
+    Analysis (TSA) data. Processing, analyzing, and visualizing data through 
+    both shiny applications and command lines. Package aims to simplify 
+	data analysis and offer front to end workflow, from raw data to 
+	multiple trial analysis.
+License: AGPL-3
+Encoding: UTF-8
+LazyData: false
+Testthat: true
+RoxygenNote: 7.2.3
+Imports: 
+    dplyr (>= 1.0.7),
+    ggplot2 (>= 3.3.5),
+    ggpubr (>= 0.4.0),
+    magrittr (>= 2.0.3),
+    mgcv (>= 1.8.38),
+    readxl (>= 1.4.0),
+    stringr (>= 1.4.0),
+    tidyr (>= 1.1.4),
+    utils (>= 4.3.1),
+    shiny (>= 1.7.4.1),
+    plotly (>= 4.10.2),
+    shinyjs (>= 2.1.0),
+    jsonlite (>= 1.8.7),
+    rhandsontable (>= 0.3.8),
+    openxlsx (>= 4.2.5.2),
+    shinyWidgets (>= 0.7.6),
+    minpack.lm (>= 1.2.3)
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+biocViews: Software, ShinyApps, Visualization, qPCR
+DataRaw: data/qPCR_data1.rda
+DataRaw2: data/qPCR_data2.rda
+DataRaw3: data/Well_Information.rda
+DataRaw4: data/Well_Information_Template.rda
+DataRawr: data/example_tsar_data.rda
+Depends: 
+    R (>= 4.3.0)
+Config/testthat/edition: 3
